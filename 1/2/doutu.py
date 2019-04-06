@@ -3,8 +3,8 @@ import os
 import re
 from urllib import request
 import lxml.html
-etree = lxml.etree
 
+etree = lxml.etree
 
 
 def parse_page(url):
@@ -22,6 +22,7 @@ def parse_page(url):
         suffix = os.path.splitext(img_url)[1]
         filename = alt + suffix
         print(filename)
+        print(1 + 1)
 
         request.urlretrieve(img_url, 'images/' + filename)
         # print(img_url)
