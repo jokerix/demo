@@ -19,5 +19,9 @@ from blogconfig import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', views.index)
+    path('index/', views.index,name = 'index'),
+    path('python/', views.python, name='python'),
+    path('django/', views.django, name='django'),
+    path('scrapy/', views.scrapy, name='scrapy'),
+
 ]
